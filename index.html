@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio | Nama Anda</title>
+  <link rel="stylesheet" href="styleindex.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet" rel="stylesheet" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+  <h1 class="logo">nARTbelle</h1>
+
+  <ul class="nav-links">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#projects">Proyek</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+
+  <button id="toggleTheme">🌙</button>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="foto/WhatsApp Image 2026-01-20 at 11.16.45.jpeg" alt="Profile">
+    <h2>Halo, Saya <span>Narra</span></h2>
+    <p>Graphic Designer | DKV Student</p>
+    <a href="#projects" class="btn">Lihat Proyek</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Aku Qurrota A'yun Arrabbaanii Sukoco, bisa dipanggil Noni atau Narra. Aku pelajar DKV yang fokus mengembangkan keterampilan desain dan memahami bagaimana visual dapat digunakan untuk menyampaikan pesan secara efektif dan estetik.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Proyek</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Website Design</h3>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card" onclick="openGraphic()">
+  <h3>Graphic Design</h3>
+  <p>Canva, Adobe Photoshop,<br>Adobe Illustrator</p>
+</div>
+       <div class="card">
+        <h3>Photographic</h3>
+        <p>Color Grading, Snapseed</p>
+      </div>
+    </div>
+  </section>
+  <div class="portfolio-popup" id="graphicPortfolio">
+
+<span class="close-btn" onclick="closeGraphic()">✕</span>
+
+<h2>My Graphic Design</h2>
+
+<div class="portfolio-gallery">
+
+<img src="aset/cover buku.jpeg">
+<img src="aset/desain kemasan.jpeg">
+<img src="aset/feed ig.jpeg">
+<img src="aset/menunino.png">
+
+</div>
+
+</div>
+  
+
+  <!-- Contact -->
+
+  <section class="contact" id="contact">
+
+<h2 class="heading">Let's <span>Talk</span></h2>
+<p class="contact-subtitle">Have a project in mind? Send me a message 💌</p>
+
+<form id="contactForm"
+ action="https://formsubmit.co/its.meeyuri@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+
+<div class="input-box">
+
+<div class="input-field">
+<i class="fa-solid fa-user"></i>
+<input type="text" name="name" placeholder="Your Name" required>
+</div>
+
+<div class="input-field">
+<i class="fa-solid fa-phone"></i>
+<input type="text" name="mobile" placeholder="Phone Number">
+</div>
+
+</div>
+
+<div class="input-box">
+
+<div class="input-field">
+<i class="fa-solid fa-envelope"></i>
+<input type="email" name="email" placeholder="Email Address" required>
+</div>
+
+<div class="input-field">
+<i class="fa-solid fa-tag"></i>
+<input type="text" name="subject" placeholder="Subject">
+</div>
+
+</div>
+
+<div class="input-field">
+
+<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+</div>
+
+<input type="submit" value="Send Message" class="btn">
+
+<div class="success-message">
+<i class="fa-solid fa-circle-check"></i> Message Sent Successfully!
+</div>
+
+</form>
+
+<div class="socials">
+ <a href="https://www.instagram.com/nartbelle?igsh=MXVyeWg0a2d0YmIwbA=="><i class="fa-brands fa-instagram"></i></a></div>
+
+</section>
+
+
+  <footer>
+    <p>© 2026 nARTbelle</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
